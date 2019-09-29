@@ -1,0 +1,109 @@
+ .hexagons {
+	font-size: 0;
+	width: 1000px;
+}
+ 
+ .hexagon {  
+ 	margin-top: 50px;
+    width: 164px;  
+    height: 94px;  
+    background: #dcdddd;  
+    position: relative;  
+}  
+.hexagon:before {  
+    content: "";  
+    position: absolute;  
+    top: -47px;  
+    left: 0;  
+    width: 0;  
+    height: 0;  
+    border-left: 82px solid transparent;  
+    border-right: 82px solid transparent;  
+    border-bottom: 47px solid #dcdddd;  
+}  
+.hexagon:after {  
+    content: "";  
+    position: absolute;  
+    bottom: -47px;  
+    left: 0;  
+    width: 0;  
+    height: 0;  
+    border-left: 82px solid transparent;  
+    border-right: 82px solid transparent;  
+    border-top: 47px solid #dcdddd;  
+} 
+
+.hexagon {
+	font-size: 16px;
+	line-height: 94px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+.hexagon a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hexagons div {
+	display: inline-block;
+	margin-right: 14px;
+}
+
+.hexagons div:nth-child(1) {
+	margin-left: 89px;
+}
+
+.hexagons div:nth-child(n+6) {
+	margin-top: 59px;
+}
+
+.hexagon5,
+.hexagon6 {
+	color: transparent;
+}
+
+.hexagon2,
+.hexagon9 {
+	color: #005abc;
+}
+
+.hexagon4,
+.hexagon7 {
+	background: #005BAC;
+}
+
+.hexagon4:before,
+.hexagon7:before {
+	border-bottom: 47px solid #005BAC;  
+}
+
+.hexagon4:after,
+.hexagon7:after {
+	border-top: 47px solid #005BAC;  
+}
+
+.hexagon1,
+.hexagon3,
+.hexagon8,
+.hexagon10 {
+	background: #358ad6;
+}
+
+.hexagon1:before,
+.hexagon3:before,
+.hexagon8:before,
+.hexagon10:before {
+	border-bottom: 47px solid #358ad6;
+}
+
+.hexagon1:after,
+.hexagon3:after,
+.hexagon8:after,
+.hexagon10:after {
+	border-top: 47px solid #358ad6;
+}

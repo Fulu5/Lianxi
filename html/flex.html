@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		.newsroom-title {
+			font-size: 60px;
+			line-height: 80px;
+			color: #004898;
+			margin-top: 140px;
+			margin-bottom: 140px;
+		}
+		
+		.news-container {
+			margin-bottom: 140px;
+			display: flex !important;
+			display: -ms-flexbox !important;
+			display: -webkit-flex !important;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		
+		.news {
+			width: 49.54%;
+			margin-right: 0.9%;
+			margin-bottom: 24px;
+			padding: 40px 24px;
+			font-size: 30px;
+			background-color: #F6F6F6;
+			display: flex !important;
+			display: -ms-flexbox !important;
+			display: -webkit-flex !important;
+			flex-direction: row;
+			justify-content: space-around;
+			box-sizing: border-box;
+		}
+		
+		.news-container .news:nth-child(even) {
+			margin-right: 0;
+		}
+		
+		.news-desc-wrapper {
+			display: flex !important;
+			display: -ms-flexbox !important;
+			display: -webkit-flex !important;
+			flex-direction: column;
+			text-align: left;
+		}
+		
+		.news-title {
+			font-size: 30px;
+			color: #004898;
+		}
+		
+		.info4 {
+			display: flex !important;
+			display: -ms-flexbox !important;
+			display: -webkit-flex !important;
+			flex-direction: row;
+			margin-bottom: 24px;
+		}
+		
+		.spot-icon {
+			margin-right: 24px;
+		}
+		
+		.news-date {
+			font-size: 24px;
+			color: #595757;
+			margin-top: 24px;
+			margin-bottom: 24px;
+		}
+		
+		.news-desc-wrapper .button-hover {
+			width: 240px;
+			height: 40px;
+			line-height: 36px;
+			border: 2px solid #004898;
+			color: #004898;
+			font-size: 22px;
+			line-height: 22px;
+			font-weight: bold;
+			background-color: white;
+			cursor: pointer;
+			margin-top: 24px;
+		}
+		
+		.news-img-wrapper {
+			width: 160px;
+			margin-right: 24px;
+			flex-shrink: 0;
+		}
+		
+		.news-img-wrapper .source {
+			padding-bottom: 240px;
+			background-color: #CCCCCC;
+		}
+		
+		.news-container .news:nth-child(1) .source {
+			background-image: url("/jingdiaous/images/newsroom/1.jpg");
+		}
+		
+		.news-desc {
+			font-size: 18px;
+			line-height: 36px;
+			color: #595757;
+			font-family: "Helvetica";
+			flex-grow: 1;
+		}
+		
+		.button-hover:hover {
+			border-bottom-color: transparent;
+			color: white;
+			background-color: #004898;
+		}
+		
+		h5,
+		p {
+			margin: 0;
+		}
+		
+		.center-test {
+			width: 400px;
+			height: 400px;
+			background-color: #CCCCCC;
+			margin: 0 auto;
+			display: flex !important;
+			display: -ms-flexbox !important;
+			display: -webkit-flex !important;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+
+	<body>
+		<div class="mainContent">
+			<div class="news-container">
+				<div class="news">
+					<div class="news-img-wrapper">
+						<div class="source"></div>
+					</div>
+					<div class="news-desc-wrapper">
+						<h5 class="news-title UniverseLTStd-BoldCn">Jingdiao North America Announces New Midwest Regional Sales Manager</h5>
+						<div class="news-date-container">
+							<h5 class="news-date">April 5, 2019</h5>
+						</div>
+						<div class="info4">
+							<div class="spot-icon">
+								<img src="/jingdiaous/images/recent-activities/didian.png">
+							</div>
+							<p class="info3">Booth 617<br>Donald E. Stephens Convention Center</p>
+						</div>
+						<p class="news-desc">Jingdiao North America, a manufacturer of ultra-precision, high-speed machining centers has appointed P.J. Naughton as their new Midwest Regional Sales Manager. Based in the Jingdiao’s North American Mt. Prospect, Il headquarters, Naughton will be responsible for supporting customers and dealers in the Midwest region.</p>
+						<input type="button" value="Read More" class="button-hover" onclick="window.open('./index.php/news-media/newsroom/news1')">
+					</div>
+				</div>
+				<div class="news">
+					<div class="news-img-wrapper">
+						<div class="source"></div>
+					</div>
+					<div class="news-desc-wrapper">
+						<h5 class="news-title UniverseLTStd-BoldCn">Jingdiao North America Announces New Midwest Regional Sales Manager</h5>
+						<h5 class="news-date">February 5, 2019</h5>
+						<div class="info4">
+							<div class="spot-icon">
+								<img src="/jingdiaous/images/recent-activities/didian.png">
+							</div>
+							<p class="info3">Booth 617<br>Donald E. Stephens Convention Center</p>
+						</div>
+						<p class="news-desc">JINGDIAO North America, Inc. (JDNA) is pleased to announce that it has recently appointed High-Tech Machinery Sales (High-Tech) as the new representative for machine tools and services. High-Tech will offer expert assistance on machine tool selection, specification, and configuration, advising customers in Wisconsin and Illinois on the best JDNA solution for their unique application requirements.</p>
+						<input type="button" value="Read More" class="button-hover" onclick="window.open('./index.php/news-media/newsroom/news2')">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="center-test">
+			hello
+		</div>
+	</body>
+
+</html>

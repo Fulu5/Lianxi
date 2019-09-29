@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css 3d 翻转</title>
+    <!-- <link rel="stylesheet" href="../css/css-3d-rotate.css"> -->
+    <script src="../resource/js/jquery.min.js"></script>
+    <script src="../js/css-3d-rotate.js"></script>
+</head>
+
+<body>
+    <!-- <div class="content">
+        <a class="card" href="#!">
+            <div class="front">
+                <img src="../images/1.jpg" alt="">
+                <button class="button">Click Here</button>
+            </div>
+            <div class="back">
+                <div>
+                    <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+                    <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+                    <button class="button">Click Here</button>
+                </div>
+            </div>
+        </a>
+    </div> -->
+
+    <div class="courseLogo">
+        <div class="courseBefore">
+            <img src="../images/1.jpg" alt="">
+            <button class="button">Click Here</button>
+        </div>
+        <div class="courseAfter">测试文字，测试文字，测试文字，测试文字，测试文字，测试文字</div>
+    </div>
+
+</html>
+
+<style>
+    .courseLogo {
+        width: 300px;
+        height: 300px;
+        /* float: left; */
+        margin-top: 1px;
+        position: relative;
+        box-sizing: border-box;
+        perspective: 800px;
+    }
+    
+    .courseBefore {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        backface-visibility: hidden;
+        transition: 1s;
+        background: linear-gradient(135deg, #1a9be6, #1a57e6);
+    }
+    
+    .courseBefore img {
+        width: 100%;
+    }
+    
+    .courseAfter {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        background-color: dodgerblue;
+        text-indent: 2em;
+        transform: rotateY(-180deg);
+        backface-visibility: hidden;
+        transition: 1s;
+    }
+    
+    .courseLogo:hover .courseBefore {
+        transform: rotateY(180deg);
+    }
+    
+    .courseLogo:hover .courseAfter {
+        transform: rotateY(0deg);
+    }
+    
+    .front_rotate {
+        transform: rotateY(180deg);
+        background-color: green;
+    }
+    
+    .back_rotate {
+        transform: rotateY(0deg);
+    }
+    
+    .button {
+        transform: translateZ(40px);
+        cursor: pointer;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        font-weight: bold;
+        color: #fff;
+        padding: .5em 1em;
+        border-radius: 100px;
+        font: inherit;
+        background: linear-gradient(135deg, #1a9be6, #1a57e6);
+        border: none;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: 300ms ease;
+    }
+    
+    .button:before {
+        transition: 300ms ease;
+        position: absolute;
+        display: block;
+        content: '';
+        transform: translateZ(-40px);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        height: calc(100% - 20px);
+        width: calc(100% - 20px);
+        border-radius: 100px;
+        left: 10px;
+        top: 16px;
+        box-shadow: 0 0 10px 10px rgba(26, 87, 230, 0.25);
+        background-color: rgba(26, 87, 230, 0.25);
+    }
+    
+    .button:hover {
+        transform: translateZ(55px);
+    }
+    
+    .button:hover:before {
+        transform: translateZ(-55px);
+    }
+    
+    .button:active {
+        transform: translateZ(20px);
+    }
+    
+    .button:active:before {
+        transform: translateZ(-20px);
+        top: 12px;
+    }
+</style>

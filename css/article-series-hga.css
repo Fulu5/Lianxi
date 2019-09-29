@@ -1,0 +1,57 @@
+.mainContent {
+    text-align: center;
+}
+
+.mainContent>div {
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 0;
+}
+
+.mainContent>div>div {
+    display: inline-block;
+}
+
+div.margin-none {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/*top image样式*/
+
+.top-img {
+    position: relative;
+    width: 100%;
+}
+
+.top-img img {
+    display: block;
+    width: 100%;
+}
+
+.topImg-title {
+    position: absolute;
+    top: 54%;
+    left: 80px;
+    color: white;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: left;
+    padding: 0 !important;
+    font-family: 'Univers LT Pro 47 Lt Cn';
+    transform: translateY(-54%);
+    -webkit-transform: translateY(-54%);
+    -moz-transform: translateY(-54%);
+    -ms-transform: translateY(-54%);
+    -o-transform: translateY(-54%);
+}
+
+
+/*占位图*/
+
+.source {
+    background-color: #CCCCCC;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

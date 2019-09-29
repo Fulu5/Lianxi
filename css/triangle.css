@@ -1,0 +1,17 @@
+.triangle_cgx {
+	width: 0;
+	height: 0;
+	border-width: 40px 260px;
+	border-style: solid;
+	border-color: blue transparent transparent blue;
+	margin: 40px auto;	
+}
+
+.triangle_new {
+	width: 0;
+	height: 0;
+	border-width: 50px 50px 50px 50px;
+	border-style: solid;
+	border-color: transparent transparent transparent blue;
+	margin: 40px auto;	
+}

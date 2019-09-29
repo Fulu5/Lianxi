@@ -1,0 +1,16 @@
+#userdef-scroller{
+	width:800px;
+	overflow: auto;
+	margin: 100px auto;
+	border:1px solid #ddd;
+}
+#userdef-content1 a,#userdef-content2 a{
+	display: block;
+	width:220px;
+	height:150px;
+	padding: 5px;
+}
+#userdef-content1 a img,#userdef-content2 a img{
+	width:100%;
+	height: 100%;
+}

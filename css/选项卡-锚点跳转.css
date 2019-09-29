@@ -1,0 +1,326 @@
+.position {
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+.jobCategory,
+.jobContent {
+	width: 94%;
+	margin: 0 auto;
+	max-width: 690px;
+}
+
+.jobCategory {
+	margin-top: 70px;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 0;
+	color: #595757;
+	height: 40px;
+	background-color: #efefef;
+}
+
+.name {
+	float: left;
+	color: #FFFFFF;
+	background-color: #1344AF;
+	width: 130px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	margin-right: 20px;
+	line-height: 20px;
+}
+
+.jobCategory span {
+	font-size: 16px;
+}
+
+.name span {
+	font-size: 20px;
+}
+
+.zhiweiLogo {
+	background: url(../images/选项卡-锚点跳转/logo.png);
+	height: 24px;
+	width: 20px;
+	margin: auto 0;
+	padding: 0;
+	float: left;
+	margin-left: 10px !important;
+	margin-top: 8px !important;
+}
+
+.jobCategory span {
+	cursor: pointer;
+	vertical-align: middle;
+	line-height: 40px;
+}
+
+.name span {
+	margin: 0;
+	padding: 0;
+	margin-left: 5px;
+	vertical-align: middle;
+	line-height: 40px;
+	float: left;
+	cursor: default !important;
+}
+
+.categorySpan {
+	height: 30px;
+	width: 137px;
+	margin-right: 20px;
+}
+
+.jobCategory .active {
+	color: #1344AF;
+	cursor: default;
+}
+
+.pip {
+	margin-left: 10px;
+}
+
+.jobTip {
+	height: 50px;
+	border-top: 1px solid #E7E7E7;
+	text-align: right;
+	line-height: 50px;
+	cursor: default;
+	font-size: 12px;
+}
+
+.jobContent {
+	padding: 40px 30px;
+	padding-bottom: 90px;
+	border: 1px solid #c9caca;
+	margin-top: 40px;
+}
+
+.jobContent a {
+	cursor: default !important;
+}
+
+.jobTitle {
+	color: #1344AF;
+	margin-bottom: 40px;
+	font-weight: bold;
+	cursor: default;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.jobSmallTitle {
+	color: #1344AF;
+	cursor: default;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: bold;
+}
+
+.jobResponsibility,
+.jobRequirements {
+	font-family: "微软雅黑";
+	background-color: #FFFFFF;
+	border: none;
+	padding: 14px 0 30px 0;
+	font-size: 16px;
+	cursor: default;
+	white-space: pre-line;
+	text-align: justify;
+	line-height: 30px;
+	color: #595757;
+}
+
+.jobRequirements {
+	padding: 14px 0 0 0;
+}
+
+.applyBtn {
+	width: 126px;
+	text-align: center;
+	height: 30px;
+	line-height: 28px;
+	border: 1px solid #1344AF;
+	border-radius: 15px;
+	color: #1344AF;
+	font-size: 16px;
+	cursor: pointer;
+	background: #FFFFFF;
+	float: right;
+	margin-top: 19px;
+}
+
+#mask {
+	width: 100%;
+	background-color: #515151;
+	opacity: 0.5;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 50;
+}
+
+.applyMessageContent {
+	font-size: 16px;
+	margin: 60px 0 40px 30px;
+	color: #595757 !important;
+	line-height: 30px;
+}
+
+.applyMessageContent a {
+	color: #595757 !important;
+	cursor: pointer !important;
+}
+
+#applyMessage {
+	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	max-width: 690px;
+	width: 90%;
+	z-index: 102;
+	background-color: #FFFFFF;
+	padding: 0;
+	cursor: default;
+	display: none;
+}
+
+#closeApplyMessage {
+	width: 74px;
+	text-align: center;
+	border: 1px solid #595757;;
+	color: #595757;
+	font-size: 16px;
+	cursor: pointer;
+	float: right;
+	border-radius: 15px;
+	height: 30px;
+	line-height: 28px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	vertical-align: middle;
+}
+
+#mask {
+	width: 100%;
+	background-color: #515151;
+	opacity: 0.5;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 50;
+}
+
+a:hover {
+	color: #1344AF !important;
+}
+
+/* 最低宽度:479px
+ * 此时字体开始换行
+ * */
+@media screen and (max-width: 479px) {
+	
+	.jobCategory span {
+		font-size: 14px;
+	}
+	
+	.name span {
+		font-size: 16px;
+	}
+	
+	.name {
+		width: 110px;
+	}
+	
+	.categorySpan, .name {
+		margin-right: 17px;
+	}
+	
+	.jobTitle {
+		font-size: 22px;
+		line-height: 22px;
+	}
+	
+	.jobSmallTitle {
+		font-size: 16px;
+		line-height: 16px;
+	}
+	
+	.jobResponsibility, 
+	.jobRequirements {
+		font-size: 14px;
+		line-height: 26px;
+	}
+}
+
+@media screen and (max-width: 412px) {
+	
+	.categorySpan ,
+	.name {
+		margin-right: 10px;
+	}
+	
+	.jobTitle {
+		font-size: 20px;
+		line-height: 20px;
+	}
+	
+	.jobSmallTitle {
+		font-size: 14px;
+		line-height: 14px;
+	}
+	
+	.jobResponsibility, 
+	.jobRequirements {
+		font-size: 12px;
+		line-height: 22px;
+	}
+	
+	.applyBtn {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 382px) {
+	.categorySpan ,
+	.name {
+		margin-right: 5px;
+	}
+}
+
+@media screen and (max-width: 362px) {
+	.categorySpan, .name {
+		margin-right: 13px;
+	}
+	
+	.jobCategory span {
+		font-size: 12px;
+	}
+	
+	.name span {
+		font-size: 14px;
+	}
+	
+	.name {
+		width: 100px;
+	}
+	
+	.categorySpan ,
+	.name {
+		margin-right: 5px;
+	}
+	
+	.jobTitle {
+		font-size: 18px;
+		line-height: 18px;
+	}
+}

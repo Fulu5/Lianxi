@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<style>
+		.img-wrapper {
+			max-width: 750px;
+			margin: 0 auto;
+		}
+	</style>
+
+	<body>
+		<!--jQuery-->
+		<script src="../resource/js/jquery.min.js"></script>
+		<!--JS-->
+		<script src="../js/选项卡-锚点跳转.js"></script>
+		<!--CSS-->
+		<link rel="stylesheet" href="../css/common0.css" />
+		<link rel="stylesheet" href="../css/选项卡-锚点跳转.css" />
+		<!--页面大图-->
+		<div class="img-wrapper"><img class="img" src="../images/选项卡-锚点跳转/jiaru.jpg" /></div>
+			<div class="position">
+			<a name="czg" id="czg">
+				<div class="jobCategory visible">
+					<div class="name">
+						<span class="zhiweiLogo"></span>
+						<span>职位名称</span>
+					</div>
+                    <span class="categorySpan active" index="0" id="cz">操作工程师</span>
+					<span class="categorySpan" index="1" id="gy">工艺工程师</span>
+					<span class="categorySpan" index="2" id="sb">设备工程师</span>
+				</div>
+
+				<!--操作工-->
+				<div class="jobContent visible" id="zhiwei0">
+					<div class="jobTitle">操作工程师</div>
+					<div class="jobSmallTitle">岗位职责：</div>
+					<div class="jobResponsibility">1、根据生产需求，操作金属镀膜、ICP刻蚀、光刻、化学清洗等设备，完成生产任务； 
+						2、及时发现所操作工艺的异常情况，准确上报； 
+						3、通过培训学习，能熟练操作测试仪器； 
+						4、协助工艺工程师完成相关工作。
+					</div>
+					<div class="jobSmallTitle">任职资格要求：</div>
+					<div class="jobRequirements">1、学历/专业：电子、物理、化学等相关专业大专及以上； 
+						2、动手能力强，吃苦耐劳，做事细心认真； 
+						3、工作责任心强，积极主动，服从领导安排； 
+						4、有半导体或者MEMS生产制造经验者优先考虑。
+					</div>
+					<a class="applyBtn">应聘此岗位</a>
+				</div>
+
+				<!--工艺工程师-->
+				<div class="jobContent" id="zhiwei1" style="display: none;">
+					<div class="jobTitle">工艺工程师</div>
+					<div class="jobSmallTitle">岗位职责：</div>
+					<div class="jobResponsibility">主要负责半导体生产相关工艺的开发和维护，主要职责如下： 
+						1、协助主管，确保在线生产工艺稳定； 
+						2、监督和指导操作工按照文件正确地操作工艺设备； 
+						3、能够熟练操作工艺设备并处理工艺异常，查找异常原因，提出具体整改措施并实施； 
+						4、按照公司的新材料、新设备的引进程序，完成申购、工艺实验、最终运用等各项工作； 
+						5、各类工艺质量文件的编写与完善。能够独立完成新产品新工艺开发和导入。
+					</div>
+					<div class="jobSmallTitle">任职资格要求：</div>
+					<div class="jobRequirements">1、学历/专业：半导体物理，微电子，化学材料及其他相关专业大学本科及以上； 
+						2、专门知识/技能： 熟悉半导体集成电路的生产制造过程，工艺原理和流程，可独立完成工艺调试，处理工艺异常； 
+						3、专业/从业资格：能够熟练使用L-edit软件对设计团队设计完成的版图文件进行布局调整； 
+						4、熟悉光刻、PVD镀膜、LPCVD、PECVD、湿法腐蚀、清洗工艺并有工艺优化经验者优先。
+					</div>
+					<a class="applyBtn">应聘此岗位</a>
+				</div>
+
+				<!--设备工程师-->
+				<div class="jobContent" id="zhiwei2" style="display: none;">
+					<div class="jobTitle">设备工程师</div>
+					<div class="jobSmallTitle">岗位职责：</div>
+					<div class="jobResponsibility">1、负责半导体设备日常维护, 并定期做好设备的保养工作； 
+						2、设备出现突发故障时及时维修和排除； 
+						3、保障生产正常运行，协助工艺做好设备参数设定、优化； 
+						4、能编制设备操作手册或保养文件； 
+						5、基本的设备气管路改造等； 
+						6、设备备件及设备易耗品的申报和更换等。
+					</div>
+					<div class="jobSmallTitle">任职资格要求：</div>
+					<div class="jobRequirements">1、男，年龄35岁以下，大专学历及以上； 
+						2、有设备维护保养经验3年以上； 
+						3、理工科，机械/电子/自动化专业等相关专业，能掌握变频控制原理，PLC工作原理及一般的机械动力常识者优先； 
+						4、熟悉光刻机、LPCVD、PVD、DRIE、氧化炉等设备的工作原理和基本保养和维修常识； 
+						5、能吃苦耐劳，有上进心，有团队意识。
+					</div>
+					<a class="applyBtn">应聘此岗位</a>
+				</div>
+				<div id="mask" style="display: none; height: 100%;"></div>
+				<div id="applyMessage">
+					<div class="applyMessageContent">
+						简历投递邮箱：
+                		<span>	
+							<a id="cloak65302" href="mailto:info@leadmems.com"></a>
+						</span>
+						<script type="text/javascript">
+							document.getElementById('cloak65302').innerHTML = '';
+							var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+							var path = 'hr' + 'ef' + '=';
+							var addy65302 = '&#105;nf&#111;' + '&#64;';
+							addy65302 = addy65302 + 'l&#101;&#97;dm&#101;ms' + '&#46;' + 'c&#111;m';
+							document.getElementById('cloak65302').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy65302 + '\'>' + addy65302 + '<\/a>';
+						</script>
+						<br /> 咨询电话：029-88316320
+					</div>
+					<div id="closeApplyMessage">关闭</div>
+				</div>
+			</a>
+		</div>
+	</body>
+
+</html>

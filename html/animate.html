@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../resource/js/jquery.min.js"></script>
+		<link rel="stylesheet" href="../css/animate.css" />
+		<link rel="stylesheet" href="../css/transform.css" />
+	</head>
+	<style>
+		.box {
+			width: 556px;
+			margin: 0 auto;
+			margin-top: 1000px;
+			margin-bottom: 1000px;
+			text-align: center;
+			overflow: hidden;
+		}
+	</style>
+
+	<body>
+		<div class="box animated">
+			<img src="../images/1.jpg" />
+		</div>
+	</body>
+
+</html>
+
+<script>
+	var animateName = "slideInLeft";
+	var windowScrollTop = $(window).scrollTop();
+	var windowHeight = $(window).height();
+	var divOffsetTop = $(".box").offset().top;
+	//初始状态在可视范围时添加动效
+	if(divOffsetTop > windowScrollTop - $(".box").height() && divOffsetTop < windowScrollTop + windowHeight) {
+		$(".box").addClass(animateName);
+	} else {
+		//否则监听滚动，到可视范围时添加动效
+		$(window).scroll(function() {
+			var windowScrollTop = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			var divOffsetTop = $(".box").offset().top;
+			//在可视范围
+			if(divOffsetTop > windowScrollTop - $(".box").height() && divOffsetTop < windowScrollTop + windowHeight) {
+				$(".box").addClass(animateName);
+			}
+		});
+	}
+</script>

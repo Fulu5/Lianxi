@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>vue-blog</title>
+    <script src="../resource/js/vue.min.js"></script>
+    <script src="../resource/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/vue-exercise.css" />
+</head>
+
+<body>
+
+    <div id="dynamic-component-demo">
+        <button v-for="tab in tabs" v-bind:key="tab" v-bind:class="['tab-button', { active: currentTab === tab }]"
+            v-on:click="currentTab = tab">
+            {{ tab }}
+        </button>
+        <keep-alive>
+            <component v-bind:is="currentTabComponent" class="tab"></component>
+        </keep-alive>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script src="../js/vue-blog.js"></script>
+<script>
+    //每个示例前显示idthis.$route.fullPath
+    var divs = $("body > *");
+    var eachDivTxt = "body > *:nth-child(";
+    for (var i = 1; i < divs.length - 1; i++) {
+        var targetDiv = $(eachDivTxt + i + ")");
+        var targetId = targetDiv.attr('id');
+        targetDiv.before(targetId);
+    }
+</script>

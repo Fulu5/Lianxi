@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../resource/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/滑入滑出动画.js"></script>
+	</head>
+
+	<style>
+		img {
+			width: 100%;
+		}
+		.cover {
+			width: 500px;
+			height: 500px;
+			margin: 0 auto;
+			margin-top: 1000px;
+			opacity: 0;
+		}
+		
+		.cover-animation {
+			opacity: 1;
+			animation: bounceInLeft 1s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		}
+		
+		@keyframes bounceInLeft {
+			0% {
+				transform: translate3d(-3000px, 0, 0);
+			}
+			100% {
+				transform: none;
+			}
+		}
+	</style>
+
+	<body>
+		<div class="cover">
+			<img src="/jingdiaous/images/chip-disposal/cover.jpg">
+		</div>
+	</body>
+
+</html>
+
+<script type="text/javascript">
+	//动态添加动画
+	$(".cover").removeClass("cover-animation");
+	$(window).scroll(function() {
+		var windowScrollTop = $(window).scrollTop();
+		var windowHeight = $(window).height();
+		var divOffsetTop = $(".cover").offset().top;
+		//在可视范围
+		if(divOffsetTop >= windowScrollTop && divOffsetTop < windowScrollTop + windowHeight) {
+			$(".cover").addClass("cover-animation");
+		}
+	});
+</script>

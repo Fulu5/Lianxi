@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/选项卡.css"/>
+		<script src="../js/选项卡测试.js"></script>
+	</head>
+
+	<body>
+ 		<div class="tab-container">
+			<ul class="tab-nav">
+				<li class="tab-nav-button ">积极</li>
+				<li class="tab-nav-button ">向上</li>
+				<li class="tab-nav-button ">工作</li>
+			</ul>
+			<div class="tab-con">
+				<div class="tab-con-item">积极</div>
+				<div class="tab-con-item ">向上</div>
+				<div class="tab-con-item">工作</div>
+			</div>
+		</div>
+		
+		<!--<div class="tab-container">
+			<ul class="tab-nav">
+				<li class="tab-nav-button ">积</li>
+				<li class="tab-nav-button tab-nav-current">向</li>
+				<li class="tab-nav-button ">工</li>
+			</ul>
+			<div class="tab-con">
+				<div class="tab-con-item">积</div>
+				<div class="tab-con-item">向</div>
+				<div class="tab-con-item">工</div>
+			</div>
+		</div>-->
+
+	</body>
+
+</html>
+
+<script>
+	new Tab('tab-nav', 'tabs', {
+		type: 'click'
+	})
+</script>

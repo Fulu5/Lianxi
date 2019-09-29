@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>折叠面板</title>
+    <script type="text/javascript" src="../resource/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../resource/js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../icomoon/style.css" />
+
+</head>
+
+<style>
+    * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .accordion-ctn {
+        border: 1px solid black;
+        width: 50%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    .accordion:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    
+    .accordion-title {
+        color: #010101;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "Univers LT Pro 47 Lt Cn";
+        margin: 0;
+        padding: 10px 0;
+        position: relative;
+        padding-left: 10px;
+        background-color: #EBF0F4;
+    }
+    
+    .accordion .arrow-right {
+        float: right;
+        margin-right: 10px;
+        font-weight: bold;
+        line-height: 31px;
+        transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+    }
+    
+    .arrow-right1 {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+    }
+    
+    .arrow-right2 {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+    }
+    
+    .accordion-imgs {
+        font-size: 0;
+        margin: 0 auto;
+    }
+    
+    .accordion-imgs>img:not(:last-child) {
+        margin-right: 2%;
+    }
+    
+    .accordion-imgs img {
+        width: 32%;
+    }
+</style>
+
+<body>
+
+    <div class="accordion-ctn">
+        <div class="accordion accordion-default">
+            <h3 class="accordion-title">Part 1<span class="arrow-right icon-1 arrow-right2"></span></h3>
+            <div>
+                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur
+                    malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                <div class="accordion-imgs">
+                    <img src="../images/zuopin-10.jpg" />
+                    <img src="../images/zuopin-11.jpg" />
+                    <img src="../images/zuopin-12.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <h3 class="accordion-title">Part 2<span class="arrow-right icon-1"></span></span>
+            </h3>
+            <div>
+                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur
+                    malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur
+                    malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+            </div>
+        </div>
+        <div class="accordion">
+            <h3 class="accordion-title">Part 3<span class="arrow-right icon-1"></span></span>
+            </h3>
+            <div>
+                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur
+                    malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur
+                    malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $(".accordion").accordion({
+
+                collapsible: true,
+                active: false,
+                heightStyle: "content"
+            });
+            $(".accordion-default").accordion({
+                active: 0
+            });
+            $(".accordion-title").click(function() {
+                $(this).children(".arrow-right").toggleClass("arrow-right1").toggleClass("arrow-right2");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

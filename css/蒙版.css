@@ -1,0 +1,55 @@
+.container {
+	width: 556px;
+	height: 560px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.mask {
+	/*使mask层级高于content*/
+	z-index: 2;
+	background-color: #E8921F;
+	opacity: 1;
+	transition: opacity .5s ease;
+	-moz-transition: opacity .5s ease;
+	-webkit-transition: opacity .5s ease;
+	-ms-transition: opacity .5s ease;
+}
+
+.mask:hover {
+	opacity: 0;
+}
+
+.mask,
+.content a,
+.content img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+/*容器中用<span>包裹文字,使<span>水平垂直居中*/
+.container span,
+.mask span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.content span {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	/*使content文字部分层级低于mask*/
+	z-index: 1;
+}
+
+.mask span {
+	color: white;
+	font-size: 48px;
+	font-weight: bold;
+}

@@ -1,0 +1,39 @@
+/* responsive square */
+.constant-width-to-height-ratio {
+    background: #333;
+    width: 50%;
+  }
+  .constant-width-to-height-ratio::before {
+    content: '';
+    padding-top: 100%;
+    float: left;
+  }
+  .constant-width-to-height-ratio::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  /* Counter */
+  ul {
+    counter-reset: counter 0;
+  }
+  li::before {
+    counter-increment: counter;
+    content: counters(counter, '.') ' ';
+  }
+  /* Custom text selection */
+  .custom-text-selection::selection {
+    background: deeppink;
+    color: white;
+  }
+  /* Offscreen */
+  .offscreen {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }

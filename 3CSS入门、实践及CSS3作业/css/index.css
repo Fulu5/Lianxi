@@ -1,0 +1,342 @@
+body,
+h1,
+h2,
+h3 {
+  margin: 0;
+  pad: 0;
+}
+
+body {
+  color: #595757;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+img {
+  width: 100%;
+}
+
+.display-flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.flex-justify-center {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+}
+
+.margin-horizon {
+  margin-left: 4.17%;
+  margin-right: 4.17%;
+}
+
+.margin-top-140 {
+  margin-top: 140px;
+}
+
+.margin-btm-140 {
+  margin-bottom: 140px;
+}
+
+.padding-vertical-140 {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.nav {
+  align-items: center;
+  -webkit-align-items: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  max-width: 300px;
+}
+
+.nav-bar {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  text-align: right;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.nav-item:nth-child(2) {
+  color: #004898;
+  font-weight: bold;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+}
+
+.transformY-50 {
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.transformCenter-50 {
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.banner h1 {
+  font-size: 90px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 4.17%;
+}
+
+.jianjie .jianjie-img {
+  width: 41.67%;
+  margin-right: 2.08%;
+  margin-left: 4.17%;
+}
+
+.jianjie .jianjie-desc {
+  margin-left: 2.08%;
+  margin-right: 4.17%;
+}
+
+.jianjie .jianjie-desc h2 {
+  font-size: 60px;
+  color: black;
+  text-align: center;
+}
+
+.cards .card {
+  width: 33.3%;
+  background-color: #f6f6f6;
+}
+
+.cards .card:not(:last-child) {
+  margin-right: 16px;
+}
+
+.cards .card h3 {
+  color: #004898;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.cards .card p {
+  margin: 24px 24px 42px;
+}
+
+/* jingdiao-solutions-start */
+
+.solutions {
+  background-color: #f6f6f6;
+}
+
+.solutions-header {
+  align-items: center;
+  -webkit-align-items: center;
+  margin-bottom: 42px;
+}
+
+.solutions-header .line {
+  width: 33.3%;
+}
+
+.solutions-header .line {
+  border-top: 1px solid #004898;
+}
+
+.solutions-header h3 {
+  color: #004898;
+  font-size: 60px;
+  text-align: center;
+  margin: 0 24px;
+}
+
+.solutions-cards .card {
+  width: 20%;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+.solutions-cards .card img,
+.solutions-cards .card .dask {
+  transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
+
+.solutions-cards .card:not(:last-child) {
+  margin-right: 16px;
+}
+
+.solutions-cards .card .dask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=1);
+}
+
+.solutions-cards .card .dask h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.solutions-cards .card:hover .dask {
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.solutions-cards .card:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/* jingdiao-solutions-end */
+
+@media only screen and (max-width: 1799px) {
+  p {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .banner h1 {
+    font-size: 70px;
+  }
+
+  .jianjie .jianjie-desc h2 {
+    font-size: 48px;
+  }
+
+  .cards .card h3 {
+    font-size: 32px;
+  }
+
+  .solutions-header h3 {
+    font-size: 48px;
+  }
+
+  .solutions-cards .card .dask h3 {
+    font-size: 24px;
+  }
+
+  .margin-top-140 {
+    margin-top: 105px;
+  }
+
+  .margin-btm-140 {
+    margin-bottom: 105px;
+  }
+
+  .padding-vertical-140 {
+    padding-top: 105px;
+    padding-bottom: 105px;
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  .banner h1 {
+    font-size: 56px;
+  }
+
+  .jianjie .jianjie-desc h2 {
+    font-size: 40px;
+  }
+
+  .cards .card h3 {
+    font-size: 24px;
+  }
+
+  .solutions-header h3 {
+    font-size: 40px;
+  }
+
+  .solutions-cards .card .dask h3 {
+    font-size: 20px;
+  }
+
+  .margin-top-140 {
+    margin-top: 95px;
+  }
+
+  .margin-btm-140 {
+    margin-bottom: 95px;
+  }
+
+  .padding-vertical-140 {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+}
+
+@media only screen and (max-width: 1299px) {
+  .banner h1 {
+    font-size: 48px;
+  }
+
+  .jianjie .jianjie-desc h2 {
+    font-size: 32px;
+  }
+
+  .cards .card h3 {
+    font-size: 20px;
+  }
+
+  .solutions-header h3 {
+    font-size: 32px;
+  }
+
+  .solutions-cards .card .dask h3 {
+    font-size: 16px;
+  }
+
+  .margin-top-140 {
+    margin-top: 85px;
+  }
+
+  .margin-btm-140 {
+    margin-bottom: 85px;
+  }
+
+  .padding-vertical-140 {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}

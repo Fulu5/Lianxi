@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<style>
+		/*1*/
+		/*.container {
+			display: grid;
+			grid-gap: 10px;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		}
+		
+		.element {
+			border: 2px solid #000;
+		}*/
+		/*2*/
+		.wrap {
+			display: flex;
+		}
+		
+		.left,
+		.right {
+			width: 200px;
+			padding: 10px;
+		}
+		
+		.left {
+			background-color: red;
+		}
+		
+		.right {
+			background-color: blue;
+		}
+		/*3*/
+		/*.container {
+			overflow: hidden;
+		}
+		
+		.container>div {
+			float: left;
+			padding-bottom: 9999px;
+			margin-bottom: -9999px;
+			word-break: break-all;
+			width: 200px;
+		}
+		
+		.left {
+			background: red;
+		}
+		
+		.middle {
+			background: blue
+		}
+		
+		.right {
+			background: yellow
+		}
+		
+		img {
+			width: 100%;
+		}*/
+		/*4*/
+		
+		/*body,
+		p,
+		ul,
+		li {
+			margin: 0;
+			padding: 0;
+		}
+		
+		#top {
+			font-size: 14px;
+			color: #999;
+			margin: 10px;
+		}
+		
+		#bottom {
+			font-size: 14px;
+			color: #000;
+			margin-left: 10px;
+		}
+		
+		#inputInfo {
+			width: 260px;
+			height: 38px;
+			font-size: 16px;
+			margin-left: 10px;
+			border: 1px solid #ccc;
+			border-radius: 6px;
+		}
+		
+		#btn {
+			width: 50px;
+			height: 36px;
+			border: 1px solid #888;
+			border-radius: 6px;
+			background: none;
+		}
+		
+		#btn:focus {
+			outline: none;
+		}
+		
+		.detail_pre {
+			width: 360px;
+			border: 2px solid #ADD8E6;
+			margin-left: 10px;
+		}
+		
+		.detail {
+			width: 360px;
+			border-top: 2px solid #ADD8E6;
+			border-right: 2px solid #ADD8E6;
+			border-left: 2px solid #ADD8E6;
+			margin-left: 10px;
+		}
+		
+		#detail ul {
+			border-bottom: 2px solid #ADD8E6;
+			overflow: auto;
+		}
+		
+		#detail li {
+			padding: 2px;
+			vertical-align: middle;
+			text-align: center;
+			float: left;
+			list-style: none;
+		}
+		
+		#detail .account_number {
+			width: 192px;
+			border-right: 1px solid #B0E0E6;
+			word-break: break-all;
+		}
+		
+		#detail .del {
+			width: 34px;
+			height: 100%;
+			vertical-align: middle;
+		}
+		
+		#detail .deleteBtn {
+			border: none;
+			background: none;
+		}
+		
+		#detail .deleteBtn:focus {
+			outline: none;
+		}
+		
+		#detail .defaultBtn {
+			border: none;
+			background: none;
+		}
+		
+		#detail .defaultBtn:before {
+			content: "【设置默认】";
+		}
+		
+		#detail .defaultBtn:focus {
+			outline: none;
+		}
+		
+		#detail .default0 {
+			width: 120px;
+			height: 100%;
+			border-right: 1px solid #B0E0E6;
+		}
+		
+		#detail .default1 {
+			color: #00f;
+		}
+		
+		#detail .default1:before {
+			content: "默认";
+		}*/
+	</style>
+
+	<body>
+		<!--1-->
+		<!--<div class="container">
+			<div class="element">Some text here. Some text here. Some text here. Some text here. Some text here. Some text here.</div>
+			<div class="element">Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here.</div>
+			<div class="element">Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. </div>
+		</div>-->
+		<!--2-->
+		<div class="wrap">
+			<div class="left">
+				<p>1</p>
+				<p>1</p>
+				<p>1</p>
+				<p>1</p>
+				<p>1</p>
+				<p>1</p>
+				<p>1</p>
+			</div>
+			<div class="right">
+				right
+			</div>
+		</div>
+		<!--3-->
+		<!--<div class="container">
+			<div class="left">
+				<a href="/jingdiaous/" target="_self">
+					<div class="img-wrapper">
+						<img class="itemImg" alt="" src="/jingdiaous/images/solutions/1-1.jpg">
+					</div>
+					<div class="itemText">
+						<div class="UniverseLTStd-BoldCn title">Die Mold</div>
+						<p>Find out how Jingdiao sets up the new standard</p>
+						<p>in this industry-standardized mold</p>
+						<p>making without secondary operation and 5-axis mirror finish</p>
+						<p>mold surface,</p>
+						<p>with Jindiao’s high-precision machines and</p>
+						<p>developed technologies.</p>
+					</div>
+				</a>
+			</div>
+			<div class="middle">
+				<a class="" href="" target="_self">
+					<div class="img-wrapper">
+						<img class="itemImg" src="/jingdiaous/images/solutions/1-1.jpg" alt="">
+					</div>
+					<div class="itemText">
+						<div class="UniverseLTStd-BoldCn title">Automotive</div>
+						<p>Considering how long it’ll when large deformation</p>
+						<p>of automotive die casting,</p>
+						<p>Jingdiao’s solution is your best choice.</p>
+					</div>
+				</a>
+			</div>
+			<div class="right">
+				<a class="" href="" target="_self">
+					<div class="img-wrapper">
+						<img class="itemImg" src="/jingdiaous/images/solutions/1-1.jpg" alt="">
+					</div>
+					<div class="itemText">
+						<h1 class="UniverseLTStd-BoldCn title">Medical</h1>
+						<p>Extreme high accuracy for hard-to-cut material is what</p>
+						<p>you need. Jingdiao can help you.</p>
+					</div>
+				</a>
+			</div>
+		</div>-->
+		<!--<p id="top">支付宝信息</p>
+		<input id="inputInfo" type="text" />
+		<button id="btn">+</button>
+		<p id="bottom">已添加的支付宝</p>
+		<div id="detail" class="detail_pre">
+			<p id="description">还没有账号！</p>
+		</div>-->
+	</body>
+
+</html>
+
+<script>
+	var inputInfo = document.getElementById('inputInfo');
+	var oDetail = document.getElementById('detail');
+	var oBtn = document.getElementById('btn');
+	var oDescription = document.getElementById('description');
+	var idc = 0;
+
+	oBtn.onclick = function() {
+
+		if(inputInfo.value != "") {
+			oDetail.className = "detail";
+			oDescription.innerHTML = "";
+
+			var ul = document.createElement('ul');
+			ul.innerHTML = '<li class="account_number">' + inputInfo.value + '</li><li class="default0"><span id="id_' + idc + '" class="defaultBtn"></span></li><li class="del"><button id="close_' + idc + '" class="deleteBtn">×</button></li>';
+			oDetail.appendChild(ul);
+			inputInfo.value = "";
+		}
+
+		document.getElementById('id_' + idc).onclick = function(e) {
+			var oDefault1 = detail.getElementsByClassName('default1');
+			for(var i = 0; i < oDefault1.length; i++) {
+				oDefault1[i].className = 'defaultBtn';
+			}
+			e.target.className = 'default1';
+		};
+
+		document.getElementById('close_' + idc).onclick = function(e) {
+			e.target.parentNode.parentNode.remove();
+		};
+
+		idc++;
+	}
+</script>

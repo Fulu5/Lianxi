@@ -1,0 +1,184 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>垃圾分类</title>
+</head>
+
+<style>
+    .rubbish {
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        color: white;
+    }
+    
+    .rubbish>div {
+        width: 381px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    
+    .rubbish h3,
+    .rubbish h4 {
+        margin: 20px;
+    }
+    
+    .recyclable {
+        background-color: #4343e6;
+    }
+    
+    .other {
+        background-color: rgb(156, 156, 156);
+    }
+    
+    .kitchen {
+        background-color: rgb(44, 148, 44);
+    }
+    
+    .hazardous {
+        background-color: rgb(194, 50, 50);
+    }
+    
+    .detail-list {
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        list-style: none;
+    }
+    
+    .detail-list>li {
+        flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        margin: 2px;
+        padding: 3px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+</style>
+
+<body>
+    <div class="rubbish">
+        <div class="recyclable">
+            <h3>可回收垃圾</h3>
+            <h4>适宜回收和资源利用的物品</h4>
+            <ul>
+                <li>纸类
+                    <ul class="detail-list">
+                        <li>便条</li>
+                        <li>笔记本</li>
+                        <li>包装纸</li>
+                        <li>纸板纸箱</li>
+                        <li>宣传纸张</li>
+                        <li>打印机复印纸</li>
+                        <li>传真纸</li>
+                        <li>文件袋</li>
+                        <li>信封</li>
+                        <li>日历</li>
+                        <li>报纸</li>
+                        <li>期刊</li>
+                        <li>图书</li>
+                    </ul>
+                </li>
+                <li>塑料
+                    <ul class="detail-list">
+                        <li>矿泉水瓶</li>
+                        <li>塑料袋</li>
+                        <li>牙刷</li>
+                        <li>塑料包装</li>
+                        <li>塑料杯子</li>
+                        <li>塑料泡沫</li>
+                        <li>一次性塑料餐盒餐具</li>
+                        <li>硬塑料</li>
+                    </ul>
+                </li>
+                <li>金属
+                    <ul class="detail-list">
+                        <li>金属办公室用品</li>
+                        <li>罐头盒</li>
+                        <li>废钢铝易拉罐</li>
+                        <li>金属瓶盖</li>
+                        <li>铁 钉</li>
+                    </ul>
+                </li>
+                <li>玻璃
+                    <ul class="detail-list">
+                        <li>玻璃容器</li>
+                        <li>碎玻璃片</li>
+                        <li>镜子</li>
+                        <li>暖瓶</li>
+                    </ul>
+                </li>
+                <li>纺织物
+                    <ul class="detail-list">
+                        <li>废弃衣服</li>
+                        <li>桌布</li>
+                        <li>毛巾</li>
+                        <li>书包</li>
+                        <li>鞋</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="other">
+            <h3>其他垃圾</h3>
+            <ul>
+                <li>面巾纸</li>
+                <li>湿巾纸</li>
+                <li>餐巾纸</li>
+                <li>卫生巾</li>
+                <li>厕纸</li>
+                <li>海绵</li>
+                <li>烟蒂</li>
+                <li>烟盒</li>
+                <li>保鲜袋（膜）</li>
+                <li>清扫渣土</li>
+                <li>一次性用具</li>
+                <li>无汞的1号电池、5号电池、7号电池以及干电池、碱性电池、碳性电池</li>
+            </ul>
+        </div>
+        <div class="kitchen">
+            <h3>厨余垃圾</h3>
+            <h4>家庭废弃的有机易腐生活垃圾</h4>
+            <ul>
+                <li>零食</li>
+                <li>瓜果皮核</li>
+                <li>蛋壳</li>
+                <li>茶叶渣</li>
+                <li>咖啡渣</li>
+                <li>药渣</li>
+                <li>鲜花</li>
+                <li>蔬菜</li>
+                <li>骨头</li>
+                <li>鱼虾水产</li>
+                <li>固体食物</li>
+                <li>植物残枝落叶</li>
+            </ul>
+        </div>
+        <div class="hazardous">
+            <h3>有害垃圾</h3>
+            <h4>对人体健康或者自然环境造成直接或者潜在危害的生活垃圾</h4>
+            <ul>
+                <li>中性笔芯</li>
+                <li>打印耗材硒鼓、墨盒等</li>
+                <li>清洗液等化学品（如化妆品）</li>
+                <li>胶片相纸</li>
+                <li>水银产品</li>
+                <li>药品</li>
+                <li>杀虫剂(容器)</li>
+                <li>油漆(容器)等装修溶剂</li>
+                <li>日光灯、节能灯等废荧光灯类、灯泡、灯管</li>
+                <li>废镍镉电池和氧化汞电池（包括笔记本、手机 、iPad、照相机等使用的充电电池以及纽扣电池）以及单子类危险废物</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+</script>

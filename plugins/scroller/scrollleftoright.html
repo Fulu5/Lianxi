@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script type="text/javascript" src="scroller.js"></script>
+	<link rel="stylesheet" type="text/css" href="scroller.css"/>
+	<body>
+		<div id="userdef-scroller">
+			<table>
+				<tr>
+					<td>
+						<!--自定义循环帧1-->
+						<div id="userdef-content1">
+							<!--自定义循环帧内容-->
+							<table >
+							<tr>
+								<td><a href="https://www.baidu.com"><img src="../images/cbd.jpg"/></a></td>
+								<td><a href="https://www.baidu.com"><img src="../images/midnightRun.jpg"/></a></td>
+								<td><a href="https://www.baidu.com"><img src="../images/muwu.jpg"/></a></td>
+								<td><a href="https://www.baidu.com"><img src="../images/shuijiao.jpg"/></a></td>
+								<td><a href="https://www.baidu.com"><img src="../images/sider-menu-bg.jpg"/></a></td>
+								<td><a href="https://www.baidu.com"><img src="../images/yuantiao.jpg"/></a></td>
+							</tr>
+						    </table>
+						</div>
+					</td>
+					<td>
+						<!--自定义循环帧2-->
+						<div id="userdef-content2">
+							<!--自定义循环帧内容-->
+							<table >
+							<tr>
+								<td><a href="https://www.baidu.com"><img src="../images/cbd.jpg"/></a></td>
+								<td><a href="https://www.baidu.com"><img src="../images/midnightRun.jpg"/></a></td>
+								<td><a href="https://www.baidu.com"><img src="../images/muwu.jpg"/></a></td>
+								<td><a href="https://www.baidu.com"><img src="../images/shuijiao.jpg"/></a></td>
+								<td><a href="https://www.baidu.com"><img src="../images/sider-menu-bg.jpg"/></a></td>
+								<td><a href="https://www.baidu.com"><img src="../images/yuantiao.jpg"/></a></td>
+							</tr>
+						</table>
+						</div>
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script>
+		window.onload = function(){
+			var myscroller = new Scroller({
+			speed:20,
+			direction:'left'
+			});
+			myscroller.init();
+		}
+	</script>
+</html>

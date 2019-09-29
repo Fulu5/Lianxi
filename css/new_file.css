@@ -1,0 +1,410 @@
+.mainContent {
+	text-align: center;
+}
+
+.mainContent>div {
+	margin-left: 80px;
+	margin-right: 80px;
+	font-size: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+	.mainContent>div {
+		margin-left: 60px;
+		margin-right: 60px;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.mainContent>div {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+
+.mainContent>div>div {
+	display: inline-block;
+}
+
+div.margin-none {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+/*top image样式*/
+
+.top-img {
+	position: relative;
+	width: 100%;
+}
+
+.top-img img {
+	display: block;
+	width: 100%;
+}
+
+.topImg-title {
+	position: absolute;
+	top: 50%;
+	left: 80px;
+	color: white;
+	font-size: 90px;
+	font-weight: bold;
+	text-align: left;
+	padding: 0 !important;
+	font-family: 'Univers LT Std 47 Cn Lt';
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 1400px) {
+	.topImg-title {
+		left: 60px;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.topImg-title {
+		left: 40px;
+	}
+}
+
+
+/*占位图*/
+
+.source {
+	background-color: #CCCCCC;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+
+/*related links*/
+
+.rL-title-wrapper {
+	display: flex !important;
+	display: -webkit-flex !important;
+	display: -ms-flexbox !important;
+	padding-bottom: 40px;
+}
+
+.left-hr,
+.right-hr {
+	flex: 1;
+	-ms-flex: 1;
+	-webkit-flex: 1;
+	margin-top: 27px;
+	border-top: 1px solid #004898;
+}
+
+.left-hr {
+	margin-right: 15px;
+}
+
+.right-hr {
+	margin-left: 15px;
+}
+
+.rL-title {
+	font-family: "Univers LT Std 47 Cn Lt";
+	font-weight: bold;
+	font-size: 48px;
+	color: #004898;
+	text-align: center;
+}
+
+
+/*first part*/
+
+.first-part {
+	margin-top: 140px;
+	font-size: 0;
+}
+
+.img-wrapper-first,
+.img-wrapper-second,
+.desc-first,
+.desc-second {
+	width: 47.73%;
+}
+
+.img-wrapper-first .source {
+	padding-bottom: 47.62%;
+}
+
+.desc-first,
+.desc-second,
+.desc-third {
+	color: #595757;
+	font-size: 18px;
+	line-height: 36px;
+	text-align: justify;
+	vertical-align: top;
+	font-family: "Helvetica";
+	font-weight: normal;
+}
+
+.desc-first {
+	margin-left: 4.54%;
+}
+
+.desc-first p {
+	font-family: "Helvetica";
+}
+
+
+/*second part*/
+
+.second-part,
+.third-part {
+	background-color: #F6F6F6;
+	padding: 140px 80px;
+	margin-top: 140px;
+}
+
+@media only screen and (max-width: 1400px) {
+	.second-part,
+	.third-part {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.second-part,
+	.third-part {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+.desc-second {
+	margin-right: 4.54%;
+}
+
+.desc-second .title-blue,
+.desc-second .info {
+	font-family: "Helvetica";
+}
+
+.spot {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: #004898;
+	margin-right: 16px;
+}
+
+.title-blue {
+	color: #004898;
+	font-size: 18px;
+	line-height: 36px;
+}
+
+
+/*.info {
+	text-indent: 2em;
+}*/
+
+.img-wrapper-second .source {
+	padding-bottom: 47.62%;
+}
+
+
+/*third part*/
+
+.third-part .item {
+	width: 32.73%;
+	vertical-align: top;
+	overflow: hidden;
+	position: relative;
+	margin-right: 0.9%;
+}
+
+.third-part .item:last-child {
+	margin-right: 0;
+}
+
+.teaser-wrapper {
+	position: relative;
+	background-color: #CCCCCC;
+	overflow: hidden;
+	z-index: 6;
+}
+
+.item-text {
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	position: absolute;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+	font-family: "Univers LT Std 47 Cn Lt";
+	text-align: center;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	color: white;
+	z-index: 5;
+}
+
+.teaser-wrapper:hover .item-text {
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.teaser-wrapper .source,
+.item-text {
+	transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+}
+
+.teaser-wrapper:hover .source {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
+.teaser-wrapper .teaser-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	z-index: 5;
+	opacity: 0.25;
+	-moz-opacity: 0.25;
+	filter: alpha(opacity=0.25);
+	transition: opacity .25s;
+}
+
+.teaser-wrapper:hover .teaser-mask {
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.item-img {
+	width: 100%;
+}
+
+.item-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.UniverseLTStd-BoldCn {
+	font-family: 'Univers LT Std 47 Cn Lt';
+	font-weight: bold;
+}
+
+.buttonBox-container .buttonBox {
+	margin: 0 auto;
+}
+
+.third-part .buttonBox {
+	margin: 71px auto 0 auto;
+}
+
+@media only screen and (max-width: 1919px) {
+	.rL-title-wrapper {
+		padding-bottom: 33.2px;
+	}
+	.left-hr,
+	.right-hr {
+		margin-top: 22.41px;
+	}
+	.rL-title {
+		font-size: 39.84px;
+	}
+	.first-part {
+		margin-top: 116.2px;
+	}
+	.second-part,
+	.third-part {
+		padding: 116.2px 80px;
+		margin-top: 116.2px;
+	}
+	.third-part .buttonBox {
+		margin: 58.93px auto 0 auto;
+	}
+}
+
+@media only screen and (max-width: 1599px) {
+	.topImg-title {
+		font-size: 60px;
+	}
+	.rL-title-wrapper {
+		padding-bottom: 30px;
+	}
+	.left-hr,
+	.right-hr {
+		margin-top: 20.25px;
+	}
+	.rL-title {
+		font-size: 36px;
+	}
+	.first-part {
+		margin-top: 105px;
+	}
+	.desc-first,
+	.desc-second,
+	.desc-third {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.second-part,
+	.third-part {
+		padding: 105px 80px;
+		margin-top: 105px;
+	}
+	.title-blue {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.item-text {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.third-part .buttonBox {
+		margin: 53.25px auto 0 auto;
+	}
+}
+
+@media only screen and (max-width: 1299px) {
+	.rL-title-wrapper {
+		padding-bottom: 27.2px;
+	}
+	.left-hr,
+	.right-hr {
+		margin-top: 18.36px;
+	}
+	.rL-title {
+		font-size: 32.64px;
+	}
+	.first-part {
+		margin-top: 95.2px;
+	}
+	.second-part,
+	.third-part {
+		padding: 95.2px 80px;
+		margin-top: 95.2px;
+	}
+	.third-part .buttonBox {
+		margin: 48.28px auto 0 auto;
+	}
+}

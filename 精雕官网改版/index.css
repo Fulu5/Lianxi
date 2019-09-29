@@ -1,0 +1,9 @@
+.border {
+    border: 1px solid #004898 !important;
+}
+
+.bootstrap-logo {
+    background-image: url("bootstrap-solid.svg");
+    width: 50px;
+    height: 50px;
+}

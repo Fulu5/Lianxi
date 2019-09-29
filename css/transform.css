@@ -1,0 +1,102 @@
+	/*添加人：msl
+	 添加时间：2018-07-05
+	 添加内容：常用位置偏移类向下动画*/
+	.translate_down50{
+	    -webkit-transform: translate3d(0, -50%, 0);
+    	transform: translate3d(0, -50%, 0);
+	}
+	/*添加人：cyt
+	 添加时间：2018-07-12
+	 添加内容：常用位置偏移类向上动画小幅度*/
+	.translate_up25{
+	    -webkit-transform: translate3d(0, 25%, 0);
+    	transform: translate3d(0, 25%, 0);
+	}
+	/*添加人：cyt
+	 添加时间：2018-07-12
+	 添加内容：常用位置偏移类向下动画小幅度*/
+	.translate_down25{
+	    -webkit-transform: translate3d(0, -25%, 0);
+    	transform: translate3d(0, -25%, 0);
+	}
+	/***向右偏移10%***/
+	.translate_right10{
+		-webkit-transform:translate3d(10%,0,0);
+		        transform:translate3d(10%,0,0); 
+	}
+	.translate_right18{
+		-webkit-transform:translate3d(18%,0,0);
+		        transform:translate3d(18%,0,0); 
+	}
+	.translate_left18{
+		-webkit-transform:translate3d(-18%,0,0);
+		        transform:translate3d(-18%,0,0); 
+	}
+	/***向右偏移20%***/
+	.translate_right20{
+		-webkit-transform:translate3d(20%,0,0);
+		        transform:translate3d(20%,0,0); 
+	}
+	/***向右偏移30%***/
+	.translate_right30{
+		-webkit-transform:translate3d(30%,0,0);
+		        transform:translate3d(30%,0,0); 
+	}
+	/***向右偏移40%***/
+	.translate_right40{
+		-webkit-transform:translate3d(40%,0,0);
+		        transform:translate3d(40%,0,0); 
+	}
+	/***向右偏移50%***/
+	.translate_right50{
+		-webkit-transform:translate3d(50%,0,0);
+		        transform:translate3d(50%,0,0); 
+	}
+	/***向右偏移60%***/
+	.translate_right60{
+		-webkit-transform:translate3d(60%,0,0);
+		        transform:translate3d(60%,0,0); 
+	}
+	/***向右偏移70%***/
+	.translate_right70{
+		-webkit-transform:translate3d(70%,0,0);
+		        transform:translate3d(70%,0,0); 
+	}
+	/***向右偏移80%***/
+	.translate_right80{
+		-webkit-transform:translate3d(80%,0,0);
+		        transform:translate3d(80%,0,0); 
+	}
+	/***向右偏移90%***/
+	.translate_right90{
+		-webkit-transform:translate3d(90%,0,0);
+		        transform:translate3d(90%,0,0); 
+	}
+	/***向右偏移100%***/
+	.translate_right100{
+		-webkit-transform:translate3d(100%,0,0);
+		        transform:translate3d(100%,0,0); 
+	}
+	/***
+	 * 添加人：马少玲
+	 * 添加时间：2018-07-09
+	 * 添加内容：景深旋转初始位移
+	 * ***/
+	.transform_rotateY45{
+	  	transform: perspective(1000px) rotateY(45deg) scale(0.8,0.8);
+    	-webkit-transform: perspective(1000px) rotateY(45deg) scale(0.8,0.8);
+	}
+	.transform_rotateNY45{
+	  	transform: perspective(1000px) rotateY(-45deg) scale(0.8,0.8);
+    	-webkit-transform: perspective(1000px) rotateY(-45deg) scale(0.8,0.8);
+	}
+
+/***
+ * 添加人：马少玲
+ * 添加时间：2018-07-10
+ * 添加内容：venue页动画服务类
+ * ***/
+.translateY50{
+    -webkit-transform: scale(0.8,0.8) translate(0,50%);
+     transform:  scale(0.8,0.8) translate(0,50%);
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../resource/js/jquery.min.js"></script>
+		<link rel="stylesheet" href="../icomoon/style.css" />
+	</head>
+
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.cgx-wrap {
+			width: 200px;
+		}
+		
+		.accordion {
+			padding: 10px;
+		}
+		
+		.accordion>p {
+			background: #ccc;
+			color: #333;
+			padding: 0 10px;
+			line-height: 26px;
+			margin-top: 5px;
+		}
+		
+		.accordion>p.active {
+			background: blue;
+			color: #fff;
+		}
+		
+		.accordion>p em {
+			margin-right: 10px;
+		}
+		
+		.accordion>div,
+		.accordion>ul {
+			border: 1px solid blue;
+			display: none;
+		}
+		
+		.accordion>ul {
+			list-style: none;
+		}
+		
+		.accordion>ul li {
+			padding: 0 10px;
+			line-height: 26px;
+		}
+	</style>
+
+	<body>
+		<div class="cgx-wrap">
+			<div class="accordion">
+				<p><em class="iconfont icon-add"></em>Head1</p>
+				<div class="accordion">
+					<p><em class="iconfont icon-add"></em>Sub Head1</p>
+					<ul>
+						<li>Item1</li>
+						<li>Item2</li>
+						<li>Item3</li>
+						<li>Item4</li>
+						<li>Item5</li>
+					</ul>
+					<p><em class="iconfont icon-add"></em>Sub Head2</p>
+					<ul>
+						<li>Item1</li>
+						<li>Item2</li>
+						<li>Item3</li>
+						<li>Item4</li>
+						<li>Item5</li>
+					</ul>
+				</div>
+				<p><em class="iconfont icon-add"></em>Head2</p>
+				<div class="accordion">
+					<p><em class="iconfont icon-add"></em>Sub Head1</p>
+					<ul>
+						<li>Item1</li>
+						<li>Item2</li>
+						<li>Item3</li>
+						<li>Item4</li>
+						<li>Item5</li>
+					</ul>
+					<p><em class="iconfont icon-add"></em>Sub Head2</p>
+					<ul>
+						<li>Item1</li>
+						<li>Item2</li>
+						<li>Item3</li>
+						<li>Item4</li>
+						<li>Item5</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(".accordion>p").click(function() {
+				if($(this).hasClass("active")) {
+					$(this).find("em").removeClass("icon-jian").addClass("icon-add");
+					$(this).removeClass("active").next().slideUp();
+				} else {
+					$(this).find("em").removeClass("icon-add").addClass("icon-jian");
+					$(this).addClass("active").next().slideDown();
+				}
+			});
+		</script>
+	</body>
+
+</html>

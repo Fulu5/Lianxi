@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<script src="../resource/js/vue.min.js"></script>
+		<script src="../resource/js/jquery.min.js"></script>
+		<link rel="stylesheet" href="../css/vue-exercise.css" />
+		<link rel="stylesheet" href="../css/vue-post-blog.css" />
+		<title>post-blog</title>
+	</head>
+	
+	<style>
+		body {
+			font-size: 1em;
+		}
+	</style>
+
+	<body>
+
+		<div id="post-blog-demo">
+			<div v-bind:style="{fontSize: postFontSize + 'em'}">
+				<post-blog v-for="post in posts" v-bind:key="post.id" v-bind:post="post" v-on:enlarge-text="onEnlargeText" v-on:ensmall-text="onEnsmallText">
+				</post-blog>
+			</div>
+		</div>
+
+		<div id="input-demo">
+			<custom-input v-model="message"></custom-input>
+			<p>{{message}}</p>
+		</div>
+
+		<div id="demo-alert-box">
+			<alert-box>Something bad happens.</alert-box>
+		</div>
+
+		<div id="base-check">
+			<base-checkbox v-model="lovingVue"></base-checkbox>
+			<label>{{lovingVue}}</label>
+		</div>
+
+		<div id="dynamic-component-demo">
+			<button v-for="tab in tabs" v-bind:key="tab" v-bind:class="['tab-button', { active: currentTab === tab}]" v-on:click="currentTab = tab">{{tab}}</button>
+			<keep-alive>
+				<component v-bind:is="currentTabComponent"></component>				
+			</keep-alive>
+		</div>
+
+
+
+		
+		
+		
+		
+		
+		
+
+
+
+
+		
+		
+		
+
+	</body>
+
+</html>
+
+<script type="text/javascript" src="../js/vue-post-blog.js"></script>
+<script>
+	//每个示例前显示id
+	var divs = $("body > *");
+	var eachDivTxt = "body > *:nth-child(";
+	for(var i = 1; i < divs.length - 1; i++) {
+		var targetDiv = $(eachDivTxt + i + ")");
+		var targetId = targetDiv.attr('id');
+		targetDiv.before(targetId);
+	}
+</script>

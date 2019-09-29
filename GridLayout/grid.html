@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+</head>
+<style>
+    .container {
+        margin: 0 4.2%;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(100px, 269px));
+        justify-content: center;
+        grid-gap: 10px;
+    }
+
+    .container .item {
+        display: grid;
+    }
+
+    .container .item img {
+        width: 100%;
+        align-self: stretch;
+    }
+
+    .item-1,
+    .item-2,
+    .item-4,
+    .item-5 {
+        grid-row: span 2;
+    }
+
+    .item-1,
+    .item-6,
+    .item-8 {
+        grid-column: span 2;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item item-1">
+            <img src="img/T1.jpg" alt="T1.jpg">
+        </div>
+        <div class="item item-2">
+            <img src="img/T2.jpg" alt="T2.jpg">
+        </div>
+        <div class="item item-3">
+            <img src="img/T3.jpg" alt="T3.jpg">
+        </div>
+        <div class="item item-4">
+            <img src="img/T4.jpg" alt="T4.jpg">
+        </div>
+        <div class="item item-5">
+            <img src="img/T5.jpg" alt="T5.jpg">
+        </div>
+        <div class="item item-6">
+            <img src="img/T6.jpg" alt="T6.jpg">
+        </div>
+        <div class="item item-7">
+            <img src="img/T7.jpg" alt="T7.jpg">
+        </div>
+        <div class="item item-8">
+            <img src="img/T8.jpg" alt="T8.jpg">
+        </div>
+    </div>
+
+</body>
+
+</html>
