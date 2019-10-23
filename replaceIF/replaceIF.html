@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>使用 && 和 || 代替 if 语句</title>
+</head>
+
+<body>
+    <input id="inputValue" />
+    <button onclick="goResult()">匹配</button>
+    <div id="result"></div>
+</body>
+
+</html>
+
+<script>
+    function goResult() {
+        var add_step = document.getElementById("inputValue").value;
+        console.log(add_step);
+        var add_level = {
+            '1': "第一名",
+            '2': "第二名",
+            '3': "第三名",
+            '4': "第四名"
+        }[add_step] || "无数据";
+        document.getElementById("result").innerHTML = add_level;
+    }
+</script>
