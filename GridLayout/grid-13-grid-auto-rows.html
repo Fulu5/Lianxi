@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+</head>
+<style>
+    #container {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        /* 1 */
+        /* grid-auto-columns属性和grid-auto-rows属性用来设置，浏览器自动创建的多余网格的列宽和行高 */
+        /* 它们的写法与grid-template-columns和grid-template-rows完全相同。 */
+        /* 如果不指定这两个属性，浏览器完全根据单元格内容的大小，决定新增网格的列宽和行高。 */
+        /* 2 */
+        /* 指定新增的行高统一为50px（原始的行高为100px）。 */
+        grid-auto-rows: 50px;
+    }
+
+    .item {
+        font-size: 2em;
+        text-align: center;
+        border: 1px solid #e5e4e9;
+    }
+
+    .item-8 {
+        grid-row-start: 4;
+        grid-column-start: 2;
+    }
+
+    .item-9 {
+        grid-row-start: 5;
+        grid-column-start: 3;
+    }
+</style>
+
+<body>
+    <span>foo</span>
+    <div id="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+        <div class="item item-8">8</div>
+        <div class="item item-9">9</div>
+    </div>
+    <span>bar</span>
+</body>
+
+</html>

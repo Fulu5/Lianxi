@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+</head>
+<style>
+    span {
+        font-size: 2em;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        /* 1 */
+        /* justify-items属性设置单元格内容的水平位置（左中右） */
+        /* align-items属性设置单元格内容的垂直位置（上中下） */
+        /* 两个属性的写法完全相同，都可以取下面这些值 */
+        /* 
+         * start：对齐单元格的起始边缘。
+         * end：对齐单元格的结束边缘。
+         * center：单元格内部居中。
+         * stretch：拉伸，占满单元格的整个宽度（默认值） 
+         */
+         /* 2 */
+         /* place-items属性是align-items属性和justify-items属性的合并简写形式 */
+         place-items: start end;
+    }
+
+    .item {
+        font-size: 4em;
+        text-align: center;
+        border: 1px solid #e5e4e9;
+    }
+</style>
+
+<body>
+    <span>foo</span>
+    <div id="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+        <div class="item item-8">8</div>
+        <div class="item item-9">9</div>
+    </div>
+    <span>bar</span>
+</body>
+
+</html>

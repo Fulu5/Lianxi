@@ -1,0 +1,45 @@
+<!doctype html
+    public "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <script language="javascript" type="text/javascript">
+        function Change() {
+            var myTable;
+            myTable = document.getElementById("tblTest");
+            debugger;
+            var TDcount = myTable.children[0].children[0].children.length;
+            for (i = 0; i < TDcount; i++) {
+
+                //添加转换后的tbody内的子元素
+                myTable.children[0].appendChild(creatTR(myTable.children[0].children[0].children[i].innerHTML))
+            }
+
+            //删除原始的tbody内的子元素
+            myTable.children[0].removeChild(myTable.children[0].children[0]);
+        }
+
+
+
+        //根据传进来的内如形成一行
+        function creatTR(innetHTML) {
+            var newTD = document.createElement("td");
+            newTD.innerText = innetHTML;
+            var newTR = document.createElement("tr");
+            newTR.appendChild(newTD)
+            return newTR;
+        }
+    </script>
+</head>
+
+<body>
+    <table id="tblTest">
+        <tr>
+            <td>11111111</td>
+            <td>2222222</td>
+        </tr>
+    </table>
+    <input type="button" value="change" onclick="Change()">
+</body>
+
+</html>
