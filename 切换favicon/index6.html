@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>原始标题</title>
+    <link rel="icon" type="image/x-icon" href="app-logo-128x128.png" />
+    <script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
+</head>
+
+<body>
+    <button id='shiftBtn' type="button" name="button">接收消息</button>
+
+    <script type="text/javascript">
+        $(function () {
+
+            const changeFavicon = link => {
+                let $favicon = document.querySelector('link[rel="icon"]');
+                if ($favicon !== null) {
+                    $favicon.href = link;
+                } else {
+                    $favicon = document.createElement("link");
+                    $favicon.rel = "icon";
+                    $favicon.href = link;
+                    document.head.appendChild($favicon);
+                }
+            };
+
+            $('#shiftBtn').on('click', function () {
+                changeFavicon('天安门.png');
+            })
+
+            var pageVisibility = (function () {
+                var prefixSupport, keyWithPrefix = function (prefix, key) {
+                    if (prefix !== "") {
+                        // 首字母大写---webkitHidden/mozHidden...
+                        return prefix + key.slice(0, 1).toUpperCase() + key.slice(1);
+                    }
+                    return key;
+                };
+                var isPageVisibilitySupport = (function () {
+                    var support = false;
+                    if (typeof window.screenX === "number") {
+                        // 判断浏览器是否支持，IE9及以下不支持。
+                        ["webkit", "moz", "ms", "o", ""].forEach(function (prefix) {
+                            if (support == false && document[keyWithPrefix(prefix, "hidden")] != undefined) {
+                                prefixSupport = prefix;
+                                support = true;
+                            }
+                        });
+                    }
+                    return support;
+                })();
+
+                var isHidden = function () {
+                    if (isPageVisibilitySupport) {
+                        return document[keyWithPrefix(prefixSupport, "hidden")];
+                    }
+                    return undefined;
+                };
+
+                var visibilityState = function () {
+                    if (isPageVisibilitySupport) {
+                        return document[keyWithPrefix(prefixSupport, "visibilityState")];
+                    }
+                    return undefined;
+                };
+
+                return {
+                    hidden: isHidden(),   // 当前tab窗口离开时为true，进入时为false
+                    visibilityState: visibilityState(),   // 当前tab窗口离开时为hidden，进入时为visible
+                    visibilitychange: function (fn, usecapture) {   // 当前tab窗口离开或者进入时会执行该事件
+                        usecapture = undefined || false;
+                        if (isPageVisibilitySupport && typeof fn === "function") {
+                            return document.addEventListener(prefixSupport + "visibilitychange", function (evt) {
+                                this.hidden = isHidden();
+                                this.visibilityState = visibilityState();
+                                fn.call(this, evt);
+                            }.bind(this), usecapture);
+                        }
+                        return undefined;
+                    }
+                };
+            })(undefined);
+
+
+            pageVisibility.visibilitychange(function () {
+                // 页面进入时才执行
+                if (!pageVisibility.hidden) {
+                    changeFavicon('app-logo-128x128.png');
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>
