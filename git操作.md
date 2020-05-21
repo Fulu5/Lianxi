@@ -1,0 +1,30 @@
+## .gitconfig路径
+用户主目录下的一个隐藏文件`.gitconfig`中
+
+## stash
+`git stash list`
+
+`git stash drop @stash{0}`
+
+`git stash clear` //清除所有
+
+## 撤销commit
+`git reset --soft HEAD^` //保留工作区修改
+
+`git reset --hard HEAD^` //不保留工作区修改
+
+## 修改文件名大小写
+### 方法1：
+* 1.`git config --global core.ignorecase false` //设置本地git环境识别大小写
+* 2.修改文件名称，push
+* 3.`git rm --cached src/components/Header/filename -r` //删除多余的文件
+* 4.push
+### 方法2：
+`git config core.ignorecase` 默认为`true`时使用
+
+`git mv src/components/Header/TWTask src/components/Header/TwTask`
+
+## 配置别名
+`git config --global alias.uncommit 'reset --soft HEAD^'`
+
+
