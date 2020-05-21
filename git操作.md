@@ -27,4 +27,9 @@
 ## 配置别名
 `git config --global alias.uncommit 'reset --soft HEAD^'`
 
+## 全局配置用户名 邮箱
+`git config --global user.name "github's Name"`
+
+`git config --global user.email "github@xx.com"`
+
 
