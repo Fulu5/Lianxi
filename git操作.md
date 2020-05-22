@@ -32,4 +32,7 @@
 
 `git config --global user.email "github@xx.com"`
 
+## 解决多次提示输入用户名
+`git config --global credential.helper store`
+
 
