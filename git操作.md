@@ -8,10 +8,15 @@
 
 `git stash clear` //清除所有
 
-## 撤销commit
-`git reset --soft HEAD^` //保留工作区修改
+## 修改commit
+`git commit --amend`
 
-`git reset --hard HEAD^` //不保留工作区修改
+## 撤销commit
+`git reset --soft HEAD^` //保留工作区修改 -> 暂存区
+
+`git reset --mixed HEAD^` //保留工作区修改 -> 工作区
+
+`git reset --hard HEAD^` //删除工作区修改
 
 ## 修改文件名大小写
 ### 方法1：
