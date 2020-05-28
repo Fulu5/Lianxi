@@ -8,6 +8,9 @@
 
 `git stash clear` //清除所有
 
+## 一次性提交所有改动
+`git commit -a -m 'committing all changes'`
+
 ## 修改commit
 `git commit --amend`
 
