@@ -44,7 +44,7 @@
 `git config --global credential.helper store`
 
 ## git多人协作基本流程
-1. 上传之前执行 `git stash` （or 右键 Stash Changes）
+1. 写完代码执行 `git stash` （or 右键 Stash Changes）
 2. 获取最新代码（`git pull`）
 3. `git stash pop`
 4. 解决冲突 (与相关人员协商)
