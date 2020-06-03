@@ -1,6 +1,11 @@
 ## .gitconfig路径
 用户主目录下的一个隐藏文件`.gitconfig`中
 
+## 返回上一次所在目录
+
+`cd -`
+`cd $OLDPWD`
+
 ## stash
 `git stash list`
 
