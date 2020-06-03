@@ -15,9 +15,9 @@
 `git commit --amend`
 
 ## 撤销commit
-`git reset --soft HEAD^` //保留工作区修改 -> 暂存区
-
 `git reset --mixed HEAD^` //保留工作区修改 -> 工作区
+
+`git reset --soft HEAD^` //保留工作区修改 -> 暂存区
 
 `git reset --hard HEAD^` //删除工作区修改
 
@@ -42,5 +42,16 @@
 
 ## 解决多次提示输入用户名
 `git config --global credential.helper store`
+
+## git多人协作基本流程
+1. 上传之前执行 `git stash` （or 右键 Stash Changes）
+2. 获取最新代码（`git pull`）
+3. `git stash pop`
+4. 解决冲突 (与相关人员协商)
+5. 暂存 -> 提交 -> 推送
+
+注：
+1. 如果推送中提示需要更新代码，执行 `git reset --mixed head~`
+2. 从步骤 1 重新开始
 
 
