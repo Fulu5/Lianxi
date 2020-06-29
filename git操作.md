@@ -26,6 +26,18 @@
 
 `git reset --hard HEAD^` //删除工作区修改
 
+## 修改已经push的注释
+* 1. `git rebase -i head~1`
+* 2. 进入编辑状态
+* 3. 修改需要更改的提交开头的 `pick` 为 `edit`
+* 4. 退出编辑状态
+* 5. `git commit --amend`
+* 6. 进入编辑状态
+* 7. 修改提交注释
+* 8. 退出编辑状态
+* 9. `git rebase --continue`
+* 10. `git push --force origin master`
+
 ## 修改文件名大小写
 ### 方法1：
 * 1.`git config --global core.ignorecase false` //设置本地git环境识别大小写
