@@ -136,3 +136,25 @@ vm.$nextTick(function () {
 所以真正的触发模版更新的操作是 this.message = {};这一句引起的，因为触发了 setter，所以单看上述例子，具有响应式特性的数据只有 message 这一层，它的动态添加的属性是不具备的。
 
 ## `@click.capture.stop="myMethod()"` 仅响应myMethod方法
+
+## 8. async-await 与 promise.all()
+### 问题场景：
+一个方法中有多个异步方法，且最后一个方法需要前几个异步方法的结果。
+
+比如：项目中创建工作流时，需要调用更新后的项目model和上传的文档信息，如下：
+
+![依赖](static/1.png)
+
+### 解决方案：
+
+1. 可使用async-await ：
+
+![await](static/await.png)
+
+addWorkFlow方法会等待前两个方法的执行结果再执行。关于执行顺序可查看：[async/await 执行顺序详解](https://www.cnblogs.com/lpggo/p/8127604.html)
+
+2. 可使用promise.all()。<b>建议使用promise.all()</b>
+
+![promise](static/promise.png)
+
+多个await命令的异步操作，如果不存在依赖关系（后面的await不依赖前一个await返回的结果），用Promise.all()让它们同时触发。由于async-await是依次执行，而promise.all()是同时执行，可提高效率。
