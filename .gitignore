@@ -2,6 +2,7 @@
 node_modules/
 /dist/
 npm-debug.log*
+项目整理/廊坊.md
 
 # Editor directories and files
 .idea
