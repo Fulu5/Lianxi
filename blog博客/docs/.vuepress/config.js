@@ -14,6 +14,6 @@ module.exports = {
       }
     ],
     displayAllHeaders: false,
-    sidebar: ['/', 'Axios', 'Quasar', 'VSCode', 'Joomla', 'Grid', 'Javascript']
+    sidebar: ['/', 'Axios', 'Quasar', 'VSCode', 'Grid', 'Javascript']
   }
 };

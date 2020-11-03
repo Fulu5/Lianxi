@@ -8,8 +8,6 @@
 
 - [VSCode - 轻量级的文本编辑器](VSCode.html)
 
-- [Joomla - 全球知名的内容管理系统(CMS)](Joomla.html)
-
-- [CSS Grid - 全球知名的内容管理系统(CMS)](Joomla.html)
+- [CSS Grid - 全球知名的内容管理系统(CMS)](Grid.html)
 
 - [Javascript - 零散知识点收集](Javascript.html)

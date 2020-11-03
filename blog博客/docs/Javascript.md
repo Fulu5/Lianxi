@@ -1,3 +1,3 @@
 # Javascript
-
-- [JS常用的15个数组方法](Javascript/JS常用的15个数组方法.html)
+  
+- [JS数组常用方法](Javascript/JS数组常用方法.html)
