@@ -72,3 +72,15 @@
 2. 从步骤 1 重新开始
 
 
+## git-svn使用
+1. 将svn仓库中的项目导入本地git仓库
+   `git svn clone https://xxx`
+   1. `git svn init https://xxx`
+   2. `git svn fetch`
+2. 提交本地git仓库更新到svn仓库
+   1. `git commit -am 'commit_info'` - 工作区的修改提交到本地仓库
+   2. `git svn dcommit` - 将本地仓库的修改同步到远程svn仓库
+3. 从svn仓库更新到本地git仓库
+   1. `git svn rebase`
+
+
