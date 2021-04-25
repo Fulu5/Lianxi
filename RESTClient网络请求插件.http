@@ -1,0 +1,7 @@
+GET http://xxxx:xxxx/api/module/getlist
+    ?ObjectType=type
+    ?ObjectID=1
+    &fields=List
+    &limit=20
+    &offset=0
+Authorization: xxx
